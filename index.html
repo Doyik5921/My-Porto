@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Oyikkk();</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-black relative scroll-smooth">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 w-full bg-transparent text-white py-6 px-10 z-50 flex justify-center items-center"
+    >
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+      <label
+        for="menu-toggle"
+        class="lg:hidden flex flex-col gap-1 cursor-pointer"
+      >
+        <span class="w-6 h-[3px] bg-white"></span>
+        <span class="w-6 h-[3px] bg-white"></span>
+        <span class="w-6 h-[3px] bg-white"></span>
+      </label>
+      <ul
+        class="hidden lg:flex gap-12 text-white font-medium peer-checked:flex peer-checked:flex-col absolute lg:static bg-blur left-0 top-20 w-full lg:w-auto px-6 py-4 lg:p-0"
+      >
+        <li><a href="#" class="hover:text-green-400">HOME</a></li>
+        <li><a href="#about" class="hover:text-green-400">— ABOUT —</a></li>
+        <li><a href="#project" class="hover:text-green-400">PROJECT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Blur Effects -->
+    <div
+      class="absolute top-32 left-10 w-60 h-60 bg-green-500 opacity-60 rounded-full blur-[120px] z-0"
+    ></div>
+    <div
+      class="absolute top-[450px] left-[60%] w-60 h-60 bg-green-500 opacity-60 rounded-full blur-[120px] z-0"
+    ></div>
+
+    <!-- Hero Section -->
+    <section
+      class="min-h-screen flex flex-col-reverse lg:flex-row justify-between items-center px-6 lg:px-36 pt-24 gap-12 relative z-10"
+    >
+      <div class="text-center lg:text-left">
+        <h1 class="text-white lg:text-5xl font-bold mb-3">
+          HELLO, I’m Adi! <span id="typed-text" class="text-primary"></span>
+        </h1>
+        <h2 class="text-white lg:text-3xl mb-6">
+          I'm a <span class="auto-type text-[#98CD00]"></span>
+        </h2>
+
+        <!-- Social Media Icons (dipindah ke atas tombol) -->
+        <div
+          class="flex justify-center lg:justify-start gap-6 text-2xl mb-6 text-white"
+        >
+          <a
+            href="https://github.com/Doyik5921"
+            target="_blank"
+            class="hover:text-green-400"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/deeeoyikkk/"
+            target="_blank"
+            class="hover:text-green-400"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <!-- Tombol Learn more -->
+        <a
+          href="#"
+          class="inline-block border-2 border-white text-white px-6 py-2 hover:bg-green-400 hover:text-white transition"
+          >Learn more</a
+        >
+      </div>
+
+      <img
+        src="/assets/foto1.jpg"
+        alt="Foto Adi"
+        class="w-64 h-64 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-white shadow-[0_0_45px_#00ebebeb]"
+      />
+    </section>
+
+    <div class="container mx-auto px-4 py-8 mt-16">
+      <div class="flex flex-col lg:flex-row items-center gap-6 mb-8">
+        <div class="w-full lg:w-1/2 px-4 lg:px-8">
+          <div class="md:grid md:grid-cols-2 gap-4">
+            <div class="rounded-[20px] overflow-hidden">
+              <img
+                src="assets/Group_1.png"
+                alt="Team member 1"
+                class="w-full h-auto my-4 object-cover"
+              />
+            </div>
+            <div class="col-span-1 row-span-2 overflow-hidden">
+              <img
+                src="assets/foto2.jpg"
+                alt="Team member 2"
+                class="w-full h-[285px] md:h-full mt-4 md:mt-0 object-top rounded-lg"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="assets/foto4.jpg"
+                alt="Team member 3"
+                class="w-full h-[285px] md:w-[401px] mt-4 md:mt-0 object-cover rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="w-full rounded-lg overflow-hidden mt-4">
+            <img
+              src="assets/foto5.jpg"
+              alt="Full width image"
+              class="w-full h-[285px] md:h-[207px] object-cover"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-start justify-center gap-8 w-full lg:w-1/2 lg:flex hidden"
+        >
+          <h1
+            class="text-[30px] md:text-[40px] lg:text-[48px] font-semibold text-[#98CD00] text-center lg:text-left"
+          >
+            Hellow World
+          </h1>
+          <div class="flex justify-center">
+            <p class="text-base lg:text-lg text-white text-center max-w-3xl">
+              Hi, my name is Made Adi. I am a student majoring in Software
+              Engineering. In this field, I learn many things about the world of
+              technology, including programming, application development, user
+              interface design, and software project management. I am very
+              passionate about becoming a programmer who can create digital
+              solutions that are useful for many people.
+            </p>
+          </div>
+          <!-- Skill Icons
+          <div class="flex flex-wrap gap-4 mt-4">
+            <img
+              src="assets/Laravel.png"
+              alt="Skill Logo"
+              class="w-12 h-auto hover:scale-110 transition-transform duration-300"
+            />
+            <img
+              src="assets/react.png"
+              alt="HTML"
+              class="w-12 h-12 hover:scale-110 transition-transform duration-300"
+            />
+            <img
+              src="assets/java.png"
+              alt="CSS"
+              class="w-12 h-12 hover:scale-110 transition-transform duration-300"
+            />
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="home-resta">
+      <div class="outer-home-resta">
+        <div class="inner-home-resta">
+          <div class="area-home-resta">
+            <img src="assets/SAT.png" alt="" />
+            <div class="text-home-resta">
+              <h1>Project SAT</h1>
+              <p>
+                Project SAT is a website designed to manage class, student, and
+                major data. Users can easily add, edit, and delete data. Its
+                simple and responsive interface makes the data entry process
+                quick and efficient.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-home-resta">
+          <div class="area-home-resta">
+            <img src="assets/comingsoon.png" alt="" />
+            <div class="text-home-resta">
+              <h1>Coming Soon</h1>
+              <p>Coming Soon Guys!</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-home-resta">
+          <div class="area-home-resta">
+            <img src="assets/comingsoon.png" alt="" />
+            <div class="text-home-resta">
+              <h1>Coming Soon</h1>
+              <p>Coming Soon Guys!</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-home-resta">
+          <div class="area-home-resta">
+            <img src="assets/comingsoon.png" alt="" />
+            <div class="text-home-resta">
+              <h1>Coming Soon</h1>
+              <p>Coming Soon Guys!</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-home-resta">
+          <div class="area-home-resta">
+            <img src="assets/comingsoon.png" alt="" />
+            <div class="text-home-resta">
+              <h1>Coming Soon</h1>
+              <p>Coming Soon Guys!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer/Space Bawah -->
+    <footer class="py-10 bg-transparent text-center text-white">
+      <p class="text-sm opacity-70">
+        &copy; 2025 DeeOyikk. All rights reserved.
+      </p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let sections = gsap.utils.toArray(".inner-home-resta");
+
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".outer-home-resta",
+          pin: true,
+          scrub: 1,
+          snap: 1 / (sections.length - 1),
+          end: () =>
+            "+=" + document.querySelector(".outer-home-resta").offsetWidth,
+        },
+      });
+
+      sections.forEach((section, i) => {
+        gsap.fromTo(
+          section.querySelector(".area-home-resta"),
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: 0.1 * i,
+            scrollTrigger: {
+              trigger: section,
+              start: "left center",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
